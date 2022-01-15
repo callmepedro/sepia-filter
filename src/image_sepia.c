@@ -37,7 +37,10 @@ static const float uint8_to_float[] = {
 
 
 static unsigned char sat( uint64_t x) {
-    if (x < 256) return x; return 255;
+    if (x < 256) {
+        return x;
+    }
+    return 255;
 }
 
 static void sepia_one( struct pixel* const pixel ) {
