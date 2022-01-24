@@ -5,6 +5,8 @@
 #include "image.h"
 #include <stdlib.h>
 
-void sepia_inplace(struct image* img);
+void sepia_c_inplace(struct image* img);
+
+void sepia_asm_inplace(struct image* img);
 
 #endif

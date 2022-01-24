@@ -62,7 +62,15 @@ static void sepia_one( struct pixel* const pixel ) {
 
 void sepia_four(float[12], struct pixel*);
 
-void sepia_inplace(struct image* img) {
+void sepia_c_inplace(struct image* img) {
+    size_t data_size = img->width * img->height;
+
+    for (size_t i = 0; i < data_size; ++i) {
+        sepia_one(img->data + i);
+    }
+}
+
+void sepia_asm_inplace(struct image* img) {
     size_t data_size = img->width * img->height;
 
     for (size_t i = 0; i < data_size - data_size % 4; i += 4) {
