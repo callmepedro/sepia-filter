@@ -14,6 +14,6 @@
 >>
 >> test: compare their running times
 
-[image-before](/images/pic.bmp)
+![image-before](/images/pic.jpg)
 
-[image-after](/images/pic-sepia.bmp)
+![image-after](/images/pic-sepia.jpg)
