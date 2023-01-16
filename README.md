@@ -8,9 +8,9 @@
 >
 > [mode]: asm | c | test
 
->> c: run programm without using SSE instructions
+>> c: run programm without using SIMD instructions
 >>
->> asm: run programm using SSE instructions
+>> asm: run programm using SIMD instructions
 >>
 >> test: compare their running times
 
