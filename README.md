@@ -1,5 +1,5 @@
 ## Sepia filter
-### Sepia filter in C/ASM using SSE instructions
+### Sepia filter in C/ASM using SIMD instructions
 ---
 
 **make && ./build/main [img] [new-img] [mode]**
